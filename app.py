@@ -211,7 +211,6 @@ def check_domain_age(url):
             
     except Exception as e:
         # WHOIS failures are common and shouldn't heavily penalize
-        # Only log if in debug mode
         pass
     
     return issues, score
